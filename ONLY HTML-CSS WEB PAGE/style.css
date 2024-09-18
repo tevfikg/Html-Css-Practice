@@ -1,0 +1,182 @@
+body {
+    font-family: apple-system;
+    background-color: rgb(92, 124, 154); 
+}
+header .navbar {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+.navbar ul li {
+    margin-right: 2rem; /* Adjust spacing between items */
+}
+
+/* Dropdown Menu Styles */
+.navbar ul li.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar ul li.dropdown ul.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #0d9118;
+    width: fit-content;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10%;
+}
+
+.navbar ul li.dropdown:hover ul.dropdown-content {
+    display: block;
+}
+/* Pushes all other items to the right
+By this way the Mark Brand wil be on the left top of the header */
+.navbar .mark-link {
+    flex-grow: 0;
+    margin-right: auto; 
+}
+
+.navbar ul li {
+    margin-right: 2rem; 
+}
+.navbar {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    font-size: clamp(1rem, 2vw, 1.5rem); 
+    padding: 0.5rem 1rem; 
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #1c07bd;
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 0.25rem 0;
+    }
+}
+hr {
+    margin: 0,2rem;
+    width: 100%;
+    color: rgb(209, 92, 92);
+}
+
+img {
+    border-radius: 10%;
+    border: 2px solid rgba(240, 245, 255, 0.53);
+    transition: all ease-in out 0,5s;
+    padding: 0;
+}
+#logo {
+    padding: auto;
+    margin-bottom: 0,7rem;
+}
+
+.container {
+    background-color: #c0dffd;
+    margin: 0rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    justify-items: 1rem; 
+    padding: 1rem;
+}
+
+.container img {
+    flex: 0 0 auto; 
+    max-width: 100%; 
+    height: 100%; 
+    width: 180px; 
+    transition: transform 0.3s ease; 
+    transform: scale(0.75); 
+    border-radius: 10%;
+}
+
+.container img:hover {
+    transform: scale(1.0); 
+    border-radius: 10%;
+}
+.card {
+    padding: 0,2rem;
+    text-align: center; 
+    margin-top: 1rem; 
+    border-radius: 10%;
+    background: radius 10%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px auto;
+    margin-bottom: 2rem; 
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background: linear-gradient(to right, #ADEDA1, #009420), /* Gradient border */
+                linear-gradient(to right, #ADEDA1, #009420), /* Gradient border */
+                #365063; /* Background color of the card */
+    background-origin: border-box;
+    background-clip: content-box, padding-box, border-box;
+    border: 15px solid transparent; 
+}
+h1 {
+    color: whitesmoke;
+    text-align: center;
+    font-family: poppins;
+    margin-top: 2rem; 
+    margin-bottom: 2rem; 
+}
+
+h2 {
+    text-align: center;
+    font-family: poppins;
+}
+#contact {
+    text-align: start;
+    font-family: poppins;
+    margin-top: 2rem; 
+    margin-bottom: 0,5rem; 
+}
+.footer-container {
+   background-color: #2c3d4f !important;
+   padding: 2rem;
+}
+#copyrightsection {
+    text-align: center;
+    font-family: poppins;
+    margin-top: 2rem; 
+    margin-bottom: 0; 
+}
